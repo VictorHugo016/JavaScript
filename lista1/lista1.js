@@ -98,4 +98,5 @@ function areaQ(){
     
     document.getElementById("resultado").innerHTML =
     `A area do quadrado é ${area}`
+    
 }
