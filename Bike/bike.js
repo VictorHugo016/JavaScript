@@ -14,9 +14,6 @@ function inserir(){
         document.getElementById("resultado").innerHTML = 
         'Bike inserida com sucesso'
 }
-
-
-
 function media(){
     let soma = 0
         for(let i=0;i<vetor.length;i++){
@@ -25,8 +22,6 @@ function media(){
         document.getElementById("resultado").innerHTML = `Média de preço das bikes ${soma/vetor.length}`
    
 }
-
-
 function antiga(){
     let maisAntiga = []
     maisAntiga[0] = vetor[0] 
@@ -41,8 +36,6 @@ function antiga(){
     }
     document.getElementById("resultado").innerHTML = `Bike(s) mais antiga(s) ${maisAntiga}`
 }
-
-
 function marcaC(){
     let caloi = []
     for(let i=0;i<vetor.length;i++){
@@ -52,7 +45,6 @@ function marcaC(){
     }
     document.getElementById("resultado").innerHTML = caloi
 }
-
 function qtde29() {
 let aro29 = 0
     for(let i=0;i<vetor.length;i++){
@@ -62,7 +54,6 @@ let aro29 = 0
     }
     document.getElementById("resultado").innerHTML = `Quantidade de bikes aro 29 ${aro29}`
 }
-
 function maiorQ(){
     let maiorQuadro = vetor[0]
     for(let i=1;i<vetor.length;i++){

@@ -1,0 +1,39 @@
+/* style.css */
+#areaTotal {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilize os botões */
+.button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilize a área de resposta */
+#areaResposta {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#resultado {
+    font-size: 18px;
+}
+
+/* Estilize o conteúdo dentro de #areaButton */
+#areaButton {
+    display: inline-block;
+}
