@@ -1,4 +1,6 @@
-function inserir(vetor){
+let vetor = []
+
+function inserir(){
         let objeto = {
             marca: prompt("Informe a marca da bike"),
             modelo: prompt("Informe o modelo da bike"),
@@ -8,108 +10,65 @@ function inserir(vetor){
             preco: parseFloat(prompt("Informe o preço da bike"))
         }
         vetor.push(objeto) 
-        console.log('Bike inserida com sucesso')
+        
+        document.getElementById("resultado").innerHTML = 
+        'Bike inserida com sucesso'
 }
 
 
 
-function media(vetor){
+function media(){
     let soma = 0
-        for(let i=0;i<3;i++){
+        for(let i=0;i<vetor.length;i++){
             soma = soma + vetor[i].preco
         }   
-    console.log(`Média de preço das bikes ${soma/vetor.length}`)
+        document.getElementById("resultado").innerHTML = `Média de preço das bikes ${soma/vetor.length}`
+   
 }
 
 
-function antiga(vetor){
+function antiga(){
     let maisAntiga = []
-    maisAntiga[0] = vetor[0] // atribui todo o objeto
-    for(let i=1;i<3;i++){
+    maisAntiga[0] = vetor[0] 
+    for(let i=1;i<vetor.length;i++){
         if (vetor[i].ano < maisAntiga[0].ano){
-            maisAntiga = [] //   o vetor
+            maisAntiga = [] 
             maisAntiga[0] = vetor[i]
         }
         else if (vetor[i].ano == maisAntiga[0].ano){
-            maisAntiga.push(vetor[i]) // mais uma com o mesmo ano
+            maisAntiga.push(vetor[i]) 
         }
     }
-    console.log(`Bike(s) mais antiga(s)`)
-    console.log(maisAntiga)
+    document.getElementById("resultado").innerHTML = `Bike(s) mais antiga(s) ${maisAntiga}`
 }
 
 
-function marcaC(vetor){
+function marcaC(){
     let caloi = []
-    for(let i=0;i<3;i++){
+    for(let i=0;i<vetor.length;i++){
         if (vetor[i].marca == 'CALOI'){
             caloi.push(vetor[i])
         }
     }
-    console.log(caloi)
+    document.getElementById("resultado").innerHTML = caloi
 }
 
-function qtde29(vetor) {
+function qtde29() {
 let aro29 = 0
     for(let i=0;i<vetor.length;i++){
         if (vetor[i].aro == 29){
             aro29++
         }
     }
-    console.log(`Quantidade de bikes aro 29 ${aro29}`)
+    document.getElementById("resultado").innerHTML = `Quantidade de bikes aro 29 ${aro29}`
 }
 
-function maiorQ(vetor){
+function maiorQ(){
     let maiorQuadro = vetor[0]
     for(let i=1;i<vetor.length;i++){
         if (vetor[i].quadro > maiorQuadro.quadro){
             maiorQuadro = vetor[i]
         }
     }
-    console.log(maiorQuadro)
-}
-
-function bike(){
-    let vetor = []
-    let op = 1
-
-    while (op != 7 ){
-        
-        op = Number(prompt(`Selecione a opção desejada:\n1- inserir bike \n
-        2- Calcular media \n
-        3- Ver a bike mais antiga \n
-        4- quantidade de bike caloi \n
-        5- Quantidade de bike aro 29 \n
-        6- Ver qual Bike tem o maior quadro\n 
-        7- para sair do programa`))
-    
-        switch (op) {
-            case 1:
-            // inderir bike
-            inserir(vetor);
-        
-            case 2:
-            // média de preço das bikes
-            media(vetor)
-            
-            case 3:
-            // bike(s) mais antiga(s)
-            antiga(vetor)
-
-            case 4:
-             //bikes da marca Caloi
-            marcaC(vetor)
-
-            case 5:
-            // qts bikes aro 29
-            qtde29(vetor)
-
-            case 6:
-             // qual bike possui maior quadro, desconsidere empates
-            maiorQ(vetor)
-
-            case 7:
-            break
-        }
-    }
+    document.getElementById("resultado").innerHTML = maiorQuadro
 }

@@ -1,4 +1,4 @@
-// modularize o programa de bike sempre passando o vetor como parâmetro
+
 function cadastraBikes(vetor){
     let objeto = {
         marca: prompt("Informe a marca da bike"),
@@ -11,7 +11,7 @@ function cadastraBikes(vetor){
     vetor.push(objeto) 
     console.log('Bike inserida com sucesso')
 }
-// média de preço das bikes
+
 function calculaMediaPrecos(vetor){
     if (vetor.length == 0){
         console.log(`Sem bikes no vetor`)
