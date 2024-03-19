@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subtração</title>
+    <link rel="stylesheet" href="lista2.css">
+    <script src="lista2.js"></script>
+</head>
+
+<body>
+    <div id="areaTotal">
+        <h1>Exercicio 5</h1>
+        <div id="primeiroN">
+            <label for="N1">Digite o primeiro numero:</label>
+            <input type="number" id="N1" placeholder="20" required/>
+        </div>
+        <div id="segundoN">
+            <label for="N2">Digite o segundo numero:</label>
+            <input type="number" id="N2" placeholder="10" required/>
+        </div>
+        <div>
+            <label for="Opcao"> escolha uma opção </label>
+            <select id="op">
+                <option value="1">Media</option>
+                <option value="2">Subtracao</option>
+                <option value="3">multiplicacao</option>
+                <option value="4">divisao</option>
+                
+            </select>
+        </div>
+        <div id="areaButton">
+            <button onclick="ex5()">Calcular</button>
+        </div>
+        <div id="areaResposta">
+            <p id="resultado">
+
+            </p>
+        </div>
+    </div>    
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filme</title>
+    <script src="api.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <form>
+            <div>
+                <label for="titulo">Informe o título do filme</label>
+                <input type="text" id="titulo">
+            </div>
+            <div>
+                <label for="year">year:</label>
+                <p type="text" id="year" readonly></p>
+            </div>
+            <div>
+                <label for="diretor">Diretor</label>
+                <p type="text" id="diretor" readonly></p>
+            </div>
+            <div>
+                <label for="runtime">RunTime:</label>
+                <p type="text" id="runtime" readonly></p>
+            </div>
+            <div>
+                <label for="Genre">Genre</label>
+                <p type="text" id="genre" readonly></p>
+            </div>
+            <div>
+                <label for="released">Released</label>
+                <p type="text" id="released" readonly></p>
+            </div>
+            <div>
+                <label for="actors">Actors</label>
+                <p type="text" id="actors"></p>
+            </div>
+            <div>
+                <label for="plot">Plot</label>
+                <p type="text" id="plot" readonly></p>
+            </div>
+            <div>
+                <label for="awards">Awards</label>
+                <p type="text" id="awards" readonly></p>
+            </div>
+            <div><img id="poster"></div>
+            <div>
+                <button type="button" onclick="omdb()">
+                    Consulta OMDB
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

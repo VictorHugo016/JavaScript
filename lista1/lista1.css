@@ -1,0 +1,16 @@
+#areaTotal{
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid #000;
+    
+}
+
+h1{
+    margin-bottom: 40px;
+}
+
+#primeiroN, #segundoN, #terceiroN, #areaButton, h1, #areaResposta{
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
